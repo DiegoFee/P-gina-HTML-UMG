@@ -1,0 +1,218 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F5F5F7; /* Gris claro Apple */
+    color: #1D1D1F; /* Negro Apple */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Header y Menú de Navegación */
+header {
+    background: linear-gradient(135deg, #007AFF, #1D1D1F);
+    padding: 20px 0 80px;
+    text-align: center;
+    position: relative;
+}
+
+.navbar {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navbar a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #007AFF;
+    color: #FFFFFF;
+}
+
+header h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #fff;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+    transition: transform 0.4s ease;
+}
+
+header h1:hover {
+    transform: scale(1.1);
+}
+
+.header-img {
+    margin-top: 20px;
+    height: 200px;
+    background-color: #fff;
+}
+
+/* Carrusel */
+.carousel-inner {
+    padding: 20px;
+}
+
+.carousel-item {
+    transition: transform 0.6s ease-in-out;
+}
+
+/* Cards */
+.card {
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 122, 255, 0.2);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 122, 255, 0.4);
+}
+
+.card-header {
+    background: linear-gradient(90deg, #007AFF, #004C99);
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 15px;
+    text-align: center;
+}
+
+.card-img {
+    height: 150px;
+    background-color: #E8ECEF; /* Gris claro Apple */
+}
+
+.card-body {
+    padding: 20px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #1D1D1F;
+}
+
+/* Botones Personalizados en Cards */
+.btn-custom {
+    background-color: #007AFF;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+}
+
+.btn-custom:hover {
+    background-color: #005BB5;
+    transform: scale(1.05);
+}
+
+.btn-custom:active {
+    transform: scale(0.95);
+}
+
+/* Botones del Carrusel */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 50px;
+    height: 50px;
+    background: none;
+    border: none;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 30px;
+    height: 30px;
+    background-color: #007AFF;
+    border-radius: 50%;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+    animation: spin 1s linear infinite;
+    background-color: #004C99;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(90deg, #1D1D1F, #007AFF);
+    padding: 30px;
+    text-align: center;
+    font-size: 1rem;
+    position: relative;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+}
+
+.footer-links {
+    margin-top: 15px;
+}
+
+.footer-links a {
+    color: #FFFFFF;
+    font-size: 1rem;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #007AFF;
+}
+
+.footer-img {
+    margin-top: 20px;
+    height: 100px;
+    background-color: #fff;
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.8s ease-out;
+}

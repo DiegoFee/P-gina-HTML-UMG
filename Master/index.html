@@ -1,11 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PAGINA UMG</title>
+    <title>UMG - Ingeniería en Sistemas</title>
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <!-- Header con Menú de Navegación -->
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#duration">Duración</a></li>
+                <li><a href="#career">Campo Laboral</a></li>
+                <li><a href="#requirements">Requisitos</a></li>
+                <li><a href="#costs">Costos</a></li>
+            </ul>
+        </nav>
+        <h1 class="fade-in-up">Ingeniería en Sistemas</h1>
+        <div class="header-img">
+            <img src="img/logo2.png" alt="Descripción"> 
+        </div>
+    </header>
+
+    <!-- Carrusel de secciones -->
+    <div class="container my-5">
+        <div id="carouselSections" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Sección 1: Duración y Horario -->
+                <div class="carousel-item active" id="duration">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="card fade-in-up">
+                                <div class="card-header">
+                                    Duración y Horario de Clases
+                                </div>
+                                <div class="card-img">
+                                    <!-- Ejemplo: <img src="ruta/imagen1.jpg" alt="Horario"> -->
+                                </div>
+                                <div class="card-body">
+                                    <p>Duración: <strong>5 años</strong></p>
+                                    <p>Horario: Lunes a Viernes, <strong>17:30 - 20:45</strong></p>
+                                    <button class="btn-custom">Más Información</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sección 2: Campo Laboral -->
+                <div class="carousel-item" id="career">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="card fade-in-up">
+                                <div class="card-header">
+                                    Campo Laboral
+                                </div>
+                                <div class="card-img">
+                                    <!-- Ejemplo: <img src="ruta/imagen2.jpg" alt="Campo Laboral"> -->
+                                </div>
+                                <div class="card-body">
+                                    <p>Desarrollo de Software y Apps</p>
+                                    <p>Gestión de Redes y Bases de Datos</p>
+                                    <p>Seguridad Informática</p>
+                                    <p>Competitividad Empresarial</p>
+                                    <button class="btn-custom">Oportunidades</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sección 3: Requisitos de Inscripción -->
+                <div class="carousel-item" id="requirements">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="card fade-in-up">
+                                <div class="card-header">
+                                    Requisitos de Inscripción
+                                </div>
+                                <div class="card-img">
+                                    <!-- Ejemplo: <img src="ruta/imagen3.jpg" alt="Requisitos"> -->
+                                </div>
+                                <div class="card-body">
+                                    <ol>
+                                        <li>Fotocopia de DPI</li>
+                                        <li>Certificación de cursos</li>
+                                        <li>Fotostática de título</li>
+                                        <li>Foto tamaño cédula</li>
+                                    </ol>
+                                    <button class="btn-custom">Descargar Lista</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sección 4: Costos -->
+                <div class="carousel-item" id="costs">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="card fade-in-up">
+                                <div class="card-header">
+                                    Costos
+                                </div>
+                                <div class="card-img">
+                                    <!-- Ejemplo: <img src="ruta/imagen4.jpg" alt="Costos"> -->
+                                </div>
+                                <div class="card-body">
+                                    <p>Inscripción: <strong>Q749</strong></p>
+                                    <p>Mensualidad: <strong>Q885</strong> (5 pagos)</p>
+                                    <button class="btn-custom">Calcular Total</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Controles del carrusel -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselSections" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselSections" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="fade-in-up">
+        <p>© 2025 Ingeniería en Sistemas - UMG</p>
+        <div class="footer-links">
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+        </div>
+        <div class="footer-img">
+            <!-- Ejemplo: <img src="ruta/tu-imagen-footer.jpg" alt="Footer"> -->
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
