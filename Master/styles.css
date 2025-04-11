@@ -1,0 +1,316 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F5F5F7; /* Gris claro Apple */
+    color: #1D1D1F; /* Negro Apple */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Header y Menú de Navegación */
+header {
+    background: linear-gradient(135deg, #007AFF, #1D1D1F);
+    padding: 20px 0 100px;
+    text-align: center;
+    position: relative;
+}
+
+.navbar {
+    background: rgba(255, 255, 255, 0.1); /* Corregido el error */
+    padding: 15px 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    position: absolute;
+    left: 20px;
+}
+
+.logo-img {
+    height: 65px;
+    width: auto;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar a.nav-btn {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background: rgba(0, 122, 255, 0.3);
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar a.nav-btn:hover {
+    background: #007AFF;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 122, 255, 0.5);
+}
+
+header h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #fff;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+    transition: all 0.4s ease;
+    padding-top: 70px;
+}
+
+header h1:hover {
+    color: #00D4FF;
+    text-shadow: 0 0 20px rgba(0, 212, 255, 0.8), 0 0 30px rgba(0, 212, 255, 0.6);
+}
+
+.header-img img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Introducción */
+.intro {
+    text-align: center;
+}
+
+.intro-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1D1D1F;
+    margin-bottom: 20px;
+}
+
+.intro-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #4A4A4A;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Carrusel */
+#carouselContainer {
+    margin-top: 60px; /* Espacio para que el scroll no quede tapado */
+}
+
+.carousel-inner {
+    padding: 20px;
+}
+
+.carousel-item {
+    transition: transform 0.6s ease-in-out;
+}
+
+/* Cards */
+.card {
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 122, 255, 0.2);
+    cursor: zoom-in;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 10px 25px rgba(0, 122, 255, 0.4);
+}
+
+.card-header {
+    background: linear-gradient(90deg, #007AFF, #004C99);
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 15px;
+    text-align: center;
+}
+
+.card-img img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-img:empty {
+    height: 250px;
+    background-color: #E8ECEF;
+}
+
+.card-img {
+    margin-bottom: 15px;
+}
+
+.card-body {
+    padding: 20px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #1D1D1F;
+}
+
+.card-body h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #1D1D1F;
+}
+
+/* Botones Personalizados en Cards */
+.btn-custom {
+    display: block;
+    background: linear-gradient(90deg, #007AFF, #005BB5);
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin: 20px auto 0;
+    box-shadow: 0 3px 8px rgba(0, 122, 255, 0.3);
+}
+
+.btn-custom:hover {
+    background: linear-gradient(90deg, #005BB5, #003087);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(0, 122, 255, 0.5);
+}
+
+.btn-custom:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 5px rgba(0, 122, 255, 0.3);
+}
+
+/* Botones del Carrusel */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 50px;
+    height: 50px;
+    background: none;
+    border: none;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 30px;
+    height: 30px;
+    background-color: #007AFF;
+    border-radius: 50%;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+    animation: pulseGlow 0.8s ease infinite;
+    background-color: #004C99;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(90deg, #1D1D1F, #007AFF);
+    padding: 30px;
+    text-align: center;
+    font-size: 1rem;
+    position: relative;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+}
+
+.footer-links {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon {
+    display: inline-block;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes pulseGlow {
+    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(0, 122, 255, 0.7); }
+    50% { transform: scale(1.2); box-shadow: 0 0 15px 5px rgba(0, 122, 255, 0.9); }
+    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(0, 122, 255, 0.7); }
+}
+
+@keyframes neonGlow {
+    0% { text-shadow: 0 0 10px rgba(0, 212, 255, 0.5), 0 0 20px rgba(0, 212, 255, 0.3); }
+    100% { text-shadow: 0 0 20px rgba(0, 212, 255, 0.8), 0 0 30px rgba(0, 212, 255, 0.6); }
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+        padding-top: 100px;
+    }
+    .navbar ul {
+        gap: 10px;
+    }
+    .navbar a.nav-btn {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+    .intro-title {
+        font-size: 2rem;
+    }
+    .intro-text {
+        font-size: 1rem;
+    }
+    #carouselContainer {
+        margin-top: 40px;
+    }
+}

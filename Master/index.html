@@ -5,32 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UMG - Ingeniería en Sistemas</title>
     <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- Header con Menú de Navegación -->
     <header>
         <nav class="navbar">
+            <div class="logo">
+                <img src="img/logo2.png" alt="Logo Universidad Mariano Gálvez" class="logo-img">
+            </div>
             <ul>
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#duration">Duración</a></li>
-                <li><a href="#career">Campo Laboral</a></li>
-                <li><a href="#requirements">Requisitos</a></li>
-                <li><a href="#costs">Costos</a></li>
+                <li><a href="#home" data-bs-target="#carouselSections" data-bs-slide-to="0" class="nav-btn">Inicio</a></li>
+                <li><a href="#duration" data-bs-target="#carouselSections" data-bs-slide-to="1" class="nav-btn">Duración</a></li>
+                <li><a href="#career" data-bs-target="#carouselSections" data-bs-slide-to="2" class="nav-btn">Campo Laboral</a></li>
+                <li><a href="#requirements" data-bs-target="#carouselSections" data-bs-slide-to="3" class="nav-btn">Requisitos</a></li>
+                <li><a href="#costs" data-bs-target="#carouselSections" data-bs-slide-to="4" class="nav-btn">Costos</a></li>
             </ul>
         </nav>
-        <h1 class="fade-in-up">Ingeniería en Sistemas</h1>
+        <h1 class="fade-in-up">Ingeniería en Sistemas - UMG</h1>
         <div class="header-img">
-            <img src="img/logo2.png" alt="Descripción"> 
+            <img src="img/umgencabezado.webp" alt="Campus UMG">
         </div>
     </header>
 
+    <!-- Introducción -->
+    <section class="intro container my-5">
+        <h2 class="intro-title">Bienvenido a Ingeniería en Sistemas</h2>
+        <p class="intro-text">
+            Forma parte de una carrera innovadora en la Universidad Mariano Gálvez, donde aprenderás a diseñar, desarrollar y gestionar soluciones tecnológicas que transforman el mundo. ¡Prepárate para liderar la revolución digital!
+        </p>
+    </section>
+
     <!-- Carrusel de secciones -->
-    <div class="container my-5">
+    <div class="container my-5" id="carouselContainer">
         <div id="carouselSections" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
+                <!-- Sección 0: Inicio -->
+                <div class="carousel-item active" id="home">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="card fade-in-up">
+                                <div class="card-header">
+                                    ¿Por qué estudiar Ingeniería en Sistemas?
+                                </div>
+                                <div class="card-img">
+                                    <img src="img/campolaboral2.jpg" alt="Ingeniería en Sistemas">
+                                </div>
+                                <div class="card-body">
+                                    <p>En la UMG, nuestra carrera te prepara para enfrentar los desafíos tecnológicos del siglo XXI. Aprenderás programación, gestión de proyectos, ciberseguridad y más, con un enfoque práctico y profesores expertos.</p>
+                                    <p><strong>Beneficios:</strong></p>
+                                    <ul>
+                                        <li>Acceso a laboratorios modernos.</li>
+                                        <li>Prácticas profesionales en empresas líderes.</li>
+                                        <li>Certificaciones internacionales.</li>
+                                    </ul>
+                                    <a href="#more-info" class="btn-custom">Explora el Programa</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Sección 1: Duración y Horario -->
-                <div class="carousel-item active" id="duration">
+                <div class="carousel-item" id="duration">
                     <div class="row justify-content-center">
                         <div class="col-md-8">
                             <div class="card fade-in-up">
@@ -38,12 +75,14 @@
                                     Duración y Horario de Clases
                                 </div>
                                 <div class="card-img">
-                                    <!-- Ejemplo: <img src="ruta/imagen1.jpg" alt="Horario"> -->
+                                    <img src="/img/horario.webp" alt="Horario">
                                 </div>
                                 <div class="card-body">
+                                    <h3>Plan de Estudios</h3>
                                     <p>Duración: <strong>5 años</strong></p>
                                     <p>Horario: Lunes a Viernes, <strong>17:30 - 20:45</strong></p>
-                                    <button class="btn-custom">Más Información</button>
+                                    <p>Nuestro programa está diseñado para adaptarse a tu vida, con horarios vespertinos que te permiten trabajar o realizar otras actividades durante el día. Cada curso combina teoría y práctica para maximizar tu aprendizaje.</p>
+                                    <a href="#more-info" class="btn-custom">Ver Plan Detallado</a>
                                 </div>
                             </div>
                         </div>
@@ -59,14 +98,19 @@
                                     Campo Laboral
                                 </div>
                                 <div class="card-img">
-                                    <!-- Ejemplo: <img src="ruta/imagen2.jpg" alt="Campo Laboral"> -->
+                                    <img src="/img/campolaboral1.jpg" alt="Campo Laboral">
                                 </div>
                                 <div class="card-body">
-                                    <p>Desarrollo de Software y Apps</p>
-                                    <p>Gestión de Redes y Bases de Datos</p>
-                                    <p>Seguridad Informática</p>
-                                    <p>Competitividad Empresarial</p>
-                                    <button class="btn-custom">Oportunidades</button>
+                                    <h3>Oportunidades Profesionales</h3>
+                                    <p>Como ingeniero en sistemas, podrás trabajar en:</p>
+                                    <ul>
+                                        <li><strong>Desarrollo de Software y Apps:</strong> Crea aplicaciones innovadoras.</li>
+                                        <li><strong>Gestión de Redes y Bases de Datos:</strong> Administra sistemas críticos.</li>
+                                        <li><strong>Seguridad Informática:</strong> Protege datos sensibles.</li>
+                                        <li><strong>Competitividad Empresarial:</strong> Optimiza procesos con tecnología.</li>
+                                    </ul>
+                                    <p>¡Conviértete en un profesional demandado en Guatemala y el mundo!</p>
+                                    <a href="#opportunities" class="btn-custom">Explorar Oportunidades</a>
                                 </div>
                             </div>
                         </div>
@@ -82,16 +126,19 @@
                                     Requisitos de Inscripción
                                 </div>
                                 <div class="card-img">
-                                    <!-- Ejemplo: <img src="ruta/imagen3.jpg" alt="Requisitos"> -->
+                                    <img src="/img/inscripcion2.jpeg" alt="Requisitos">
                                 </div>
                                 <div class="card-body">
+                                    <h3>¿Qué necesitas para inscribirte?</h3>
+                                    <p>Para unirte a nuestra carrera, prepara lo siguiente:</p>
                                     <ol>
-                                        <li>Fotocopia de DPI</li>
-                                        <li>Certificación de cursos</li>
-                                        <li>Fotostática de título</li>
-                                        <li>Foto tamaño cédula</li>
+                                        <li>Fotocopia de DPI.</li>
+                                        <li>Certificación de cursos de diversificado.</li>
+                                        <li>Fotostática de título de nivel medio.</li>
+                                        <li>Foto tamaño cédula (reciente).</li>
                                     </ol>
-                                    <button class="btn-custom">Descargar Lista</button>
+                                    <p>El proceso es sencillo y nuestro equipo te guiará en cada paso.</p>
+                                    <a href="#download" class="btn-custom">Descargar Guía de Inscripción</a>
                                 </div>
                             </div>
                         </div>
@@ -107,12 +154,14 @@
                                     Costos
                                 </div>
                                 <div class="card-img">
-                                    <!-- Ejemplo: <img src="ruta/imagen4.jpg" alt="Costos"> -->
+                                    <img src="/img/costos.webp" alt="Costos">
                                 </div>
                                 <div class="card-body">
-                                    <p>Inscripción: <strong>Q749</strong></p>
-                                    <p>Mensualidad: <strong>Q885</strong> (5 pagos)</p>
-                                    <button class="btn-custom">Calcular Total</button>
+                                    <h3>Inversión en tu Futuro</h3>
+                                    <p>Inscripción: <strong>Q749</strong> (pago único).</p>
+                                    <p>Mensualidad: <strong>Q885</strong> (5 pagos por ciclo).</p>
+                                    <p>Ofrecemos planes de financiamiento y becas para apoyar tu educación. Consulta con nuestro equipo de admisiones para más detalles.</p>
+                                    <a href="#calculate" class="btn-custom">Calcular Costo Total</a>
                                 </div>
                             </div>
                         </div>
@@ -133,18 +182,40 @@
 
     <!-- Footer -->
     <footer class="fade-in-up">
-        <p>© 2025 Ingeniería en Sistemas - UMG</p>
+        <p>© 2025 Ingeniería en Sistemas - Universidad Mariano Gálvez</p>
         <div class="footer-links">
-            <a href="#">Twitter</a>
-            <a href="#">LinkedIn</a>
-            <a href="#">GitHub</a>
-        </div>
-        <div class="footer-img">
-            <!-- Ejemplo: <img src="ruta/tu-imagen-footer.jpg" alt="Footer"> -->
+            <a href="https://www.facebook.com/u.marianogalvez/?locale=es_LA" class="social-icon" target="_blank">
+                <img src="iconos/facebook.svg" alt="Facebook" class="social-img">
+            </a>
+            <a href="https://www.instagram.com/marianogalvez/?hl=es" class="social-icon" target="_blank">
+                <img src="iconos/insta.svg" alt="Instagram" class="social-img">
+            </a>
+            <a href="https://www.tiktok.com/@sistemas.plan.dia" class="social-icon" target="_blank">
+                <img src="iconos/tiktok.svg" alt="TikTok" class="social-img">
+            </a>
         </div>
     </footer>
 
     <!-- Bootstrap JS -->
     <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script para navegación y desplazamiento -->
+    <script>
+        document.querySelectorAll('.nav-btn').forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                const carousel = document.querySelector('#carouselSections');
+                const slideTo = this.getAttribute('data-bs-slide-to');
+                const bsCarousel = new bootstrap.Carousel(carousel);
+                bsCarousel.to(slideTo);
+                // Desplazamiento suave al carrusel
+                setTimeout(() => {
+                    document.querySelector('#carouselContainer').scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }, 300); // Retraso para esperar el cambio de slide
+            });
+        });
+    </script>
 </body>
 </html>
